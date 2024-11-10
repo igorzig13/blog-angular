@@ -7,6 +7,7 @@
 .container_recent-post > img {
     width: 15vw;
     height: auto;
+    object-fit: cover;
 }
 
 .container_info {
