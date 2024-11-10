@@ -3,4 +3,5 @@
     justify-content: center;
     background-image: linear-gradient(to right, white 0vw, lightgrey 100vw);
     padding: 2rem;
+    margin-top: 2vh;
 }
