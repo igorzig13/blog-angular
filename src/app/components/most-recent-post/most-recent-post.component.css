@@ -1,0 +1,29 @@
+.container_most-recent-post {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
+.container_most-recent-post > a > img {
+    width: 100%;
+    height: auto;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40vw;
+}
+
+.link-arrow {
+    height: 1.5rem;
+}
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    color: #2d6b70;
+}
