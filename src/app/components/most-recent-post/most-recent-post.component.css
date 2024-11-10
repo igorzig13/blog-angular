@@ -27,3 +27,13 @@ a:link {
 a:hover {
     color: #2d6b70;
 }
+.titulo > h2:hover {
+    text-decoration: underline;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vh;
+    margin-top: 0.5vh;
+}

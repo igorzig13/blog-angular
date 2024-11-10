@@ -1,0 +1,38 @@
+<app-menu-bar></app-menu-bar>
+<app-main-title></app-main-title>
+<h2>Posts mais recentes:</h2>
+<div class="recent-posts-grid">
+    <app-most-recent-post imageSrc="images/python.jpg"
+                          path="/article/article-1"
+                          altText="Bolsa Python"
+                          author="Itamir Filho"
+                          title='Novas vagas para o projeto "O Py Tá On"'
+                          description="Projeto conta com 5 vagas para alunos de graduação."
+                          [tags]="['Bolsas', 'Python', 'Projetos']"></app-most-recent-post>
+    <app-recent-post imageSrc="images/parceria-nasa.jpg"
+                     title="Parceria com a NASA amplia projetos do IMD."
+                     path="/article/article-2"
+                     subtitle="Projetos envolvendo simulações de órbitas planetárias com auxílio de IA podem revolucionar astronomia."
+                     author="Arnold Springbootegger"
+                     [tags]="['Parcerias', 'Projetos', 'IA']">
+    </app-recent-post>
+    <app-recent-post imageSrc="images/competicao.jpg"
+                     title="Competição de programação do curso de TI acontecerá em dezembro."
+                     path="/article/article-3"
+                     subtitle="Os melhores classificados avançam para a etapa regional. Equipe mentorada pelo professor Thanos se destaca por eliminar 50% dos concorrentes logo no primeiro dia."
+                     author="Vini Senior"
+                     [tags]="['Programação', 'Eventos']"></app-recent-post>
+    <app-recent-post imageSrc="images/hacking.jpg"
+                     title="Pesquisa investiga hábitos dos alunos do IMD."
+                     path="/article/article-4"
+                     subtitle="Objetivo é elencar aspectos saudáveis e prejudicias relacionados ao ambiente acadêmico e profissional. Higiene do sono preocupa."
+                     author="Javanildo Rails"
+                     [tags]="['Pesquisa']"></app-recent-post>
+</div>
+<h2>Todos os posts:</h2>
+<div class="all-posts">
+    <p class="work-in-progress">Work in progress...</p>
+   <!-- <app-post-card></app-post-card> -->
+</div>
+<div class="pagination"></div>
+<app-footer></app-footer>

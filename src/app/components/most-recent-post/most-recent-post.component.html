@@ -1,11 +1,16 @@
 <div class="container_most-recent-post">
-    <a href="#">
-        <img [alt]="altText" [ngSrc]="imageUrl" width="1920" height="1282">
-        <app-author-and-date></app-author-and-date>
+    <a [routerLink]="path">
+        <img [alt]="altText" [ngSrc]="imageSrc" width="1920" height="1282">
+        <app-author-and-date [author]="author" [date]="date"></app-author-and-date>
         <div class="titulo">
-            <h2>Novas vagas para o projeto "O Py Tá On" </h2>
+            <h2>{{title}}</h2>
             <img src="icons/link-arrow.png" class="link-arrow">
         </div>
     </a>
-    <p>Projeto conta com 5 vagas para alunos de graduação.</p>
+    <p>{{description}}</p>
+    <div class="tags">
+        <ng-container *ngFor="let tag of tags">
+            <app-content-tag [label]="tag"></app-content-tag>
+        </ng-container>
+    </div>
 </div>

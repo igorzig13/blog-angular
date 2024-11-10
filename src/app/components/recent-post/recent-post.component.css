@@ -33,5 +33,11 @@ a {
 }
 a:hover {
     color: #2d6b70;
-    border-bottom: #2d6b70 solid 1px;
+    text-decoration: underline;
+}
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vh;
+    margin-top: 0.5vh;
 }

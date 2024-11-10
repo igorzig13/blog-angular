@@ -1,13 +1,18 @@
 import {Component, Input} from '@angular/core';
 import {AuthorAndDateComponent} from "../author-and-date/author-and-date.component";
-import {NgOptimizedImage} from "@angular/common";
+import {NgForOf, NgOptimizedImage} from "@angular/common";
+import {ContentTagComponent} from '../content-tag/content-tag.component';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-recent-post',
   standalone: true,
     imports: [
         AuthorAndDateComponent,
-        NgOptimizedImage
+        NgOptimizedImage,
+        ContentTagComponent,
+        NgForOf,
+        RouterLink
     ],
   templateUrl: './recent-post.component.html',
   styleUrl: './recent-post.component.css'
@@ -17,7 +22,9 @@ export class RecentPostComponent {
     @Input() imageSrc: string = '';
     @Input() title: string = '';
     @Input() subtitle: string = '';
+    @Input() tags: string[] = [];
+    @Input() path: string = '';
 
-    @Input() author: string = '';
+    @Input() author: string = 'Desconhecido';
     @Input() date: Date = new Date();
 }
