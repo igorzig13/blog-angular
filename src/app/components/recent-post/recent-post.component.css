@@ -42,3 +42,24 @@ a:hover {
     gap: 0.5vh;
     margin-top: 0.5vh;
 }
+
+@media (max-width: 768px) {
+    .container_recent-post {
+        flex-direction: column;
+    }
+
+    .container_recent-post > img {
+        width: 92vw;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .container_info {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .container_info > p {
+        padding: 0;
+    }
+}

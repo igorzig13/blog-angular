@@ -40,3 +40,20 @@ h2 {
     margin-top: 1vh;
     margin-bottom: 1vh;
 }
+
+@media (max-width: 768px) {
+    .recent-posts-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "main"
+        "side1"
+        "side2"
+        "side3";
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
+    h2, .work-in-progress {
+        margin-left: 4vw;
+    }
+}

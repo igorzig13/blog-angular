@@ -37,3 +37,22 @@ a:hover {
     gap: 0.5vh;
     margin-top: 0.5vh;
 }
+
+p {
+    color: #2d3a3a;
+}
+
+@media (max-width: 768px) {
+    .container_most-recent-post {
+        width: 92vw;
+        justify-content: center;
+    }
+
+    .titulo {
+        width: 92vw;
+    }
+
+    .link-arrow {
+        display: none;
+    }
+}

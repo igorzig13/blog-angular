@@ -1,6 +1,14 @@
 <div class="container_menu-bar">
-    <div class="logo">{{logo}}</div>
-    <div class="menu-items">
+    <div class="logo">
+        <a routerLink=""> {{logo}}</a>
+    </div>
+
+    <div class="hamburger-icon" (click)="toggleMenu()">
+        <img src="icons/hamburger.png" alt="menu">
+    </div>
+
+    <div class="menu-items" [ngClass]="{'open' : isMenuOpen}">
+        <span (click)="toggleMenu()" class="close">x</span>
         <a routerLink="" routerLinkActive="active">Home</a>
         <a href="#">Sobre</a>
         <a href="#">Temas</a>

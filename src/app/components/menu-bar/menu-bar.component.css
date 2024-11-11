@@ -20,6 +20,14 @@
     padding-left: 5vw;
 }
 
+.logo a {
+    font-weight: unset;
+    text-decoration: none;
+}
+.logo a:hover {
+    color: inherit;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -40,4 +48,62 @@ a:hover {
 .subscribe-button:hover {
     background-color: #2d6b70;
     color: white;
+}
+
+.hamburger-icon {
+    margin-right: 5vw;
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-icon > img {
+    object-fit: contain;
+    max-height: calc(2vh + 1rem);
+}
+
+.close {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-items {
+        display: none;
+    }
+
+    .menu-items.open {
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+        padding-bottom: 100vh;
+        padding-top: 10vh;
+        width: fit-content;
+        position: fixed;
+        background-image: linear-gradient(to left, white 0vw, lightgrey 100vw);
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 2rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        right: 2vw;
+        top: 2vh;
+        position: absolute;
+        border: 0.2rem solid black;
+        padding-bottom: 0.5rem;
+        border-radius: 50%;
+    }
+    .close:hover{
+        color: #2d6b70;
+        border-color: #2d6b70;
+    }
 }
